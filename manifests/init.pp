@@ -18,4 +18,7 @@ class role::webserver
     include apache
 }
 
-
+class role::minimal
+{
+    include profile::common
+}
