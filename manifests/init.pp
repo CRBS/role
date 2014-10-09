@@ -22,3 +22,10 @@ class role::minimal
 {
     include profile::common
 }
+
+class role::puppetmaster
+{
+    include profile::common
+    include passenger
+
+}
