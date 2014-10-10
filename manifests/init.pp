@@ -26,7 +26,7 @@ class role::minimal
 class role::puppetmaster
 {
     ## >> will include once verified. include profile::common
-    include profile::puppetmaster_reqs
+    include profile::puppetmaster
     include passenger
 
 }
