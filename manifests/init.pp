@@ -13,8 +13,3 @@ class role
 }
 
 
-class role::minimal
-{
-    include profile::common
-}
-
