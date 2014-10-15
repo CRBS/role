@@ -1,4 +1,4 @@
-class role::firewall
+class role::iptables
 {
 
 ####### This section is for the firewall module ###############################
@@ -13,8 +13,8 @@ Firewall {
   before  => Class['core_firewall::post'],
   require => Class['core_firewall::pre'],
 }
-#class { ['core_firewall::pre', 'core_firewall::post']: }
-#class { 'firewall': }
+class { ['core_firewall::pre', 'core_firewall::post']: }
+class { 'firewall': }
 ###############################################################################
 
 
