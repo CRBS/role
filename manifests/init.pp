@@ -13,20 +13,8 @@ class role
 }
 
 
-class role::webserver
-{
-    include apache
-}
-
 class role::minimal
 {
     include profile::common
 }
 
-class role::puppetmaster
-{
-    ## >> will include once verified. include profile::common
-    include profile::puppetmaster
-    include passenger
-
-}
