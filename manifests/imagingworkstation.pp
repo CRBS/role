@@ -6,7 +6,7 @@
 class role::imagingworkstation inherits role
 {
   ## include the puppet_master profile
-  include profile::imaging_workstation
+  include profile::workstation::imaging
 }
 
 
