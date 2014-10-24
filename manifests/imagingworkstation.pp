@@ -7,6 +7,7 @@ class role::imagingworkstation inherits role
 {
   ## include the puppet_master profile
   include profile::workstation::imaging
+  include profile::openldap_client
 }
 
 
